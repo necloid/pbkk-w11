@@ -16,6 +16,35 @@ Tema kelompok: **agen keamanan siber**. Lewat system prompt, AI diarahkan untuk 
 
 ---
 
+## Tampilan
+
+Konsol chat di `http://localhost:8000` memakai API yang sama dengan Postman: login untuk mendapat token Sanctum, lalu kirim prompt.
+
+**Login.** Sebelum ada token, kolom prompt dikunci.
+
+![Halaman login konsol](docs/screenshots/01-login.png)
+
+**Analisis kode.** Jawaban dirender dengan blok kode. Riwayat milik user tampil di sidebar, beserta status Ollama dan Senopati.
+
+![Hasil analisis SQL injection dan IDOR](docs/screenshots/02-chat.png)
+
+**Streaming.** Dengan `"stream": true`, jawaban muncul kata demi kata lewat Server-Sent Events.
+
+![Jawaban AI sedang dialirkan](docs/screenshots/03-streaming.png)
+
+**Respon JSON.** Setiap jawaban bisa dibuka dalam bentuk JSON mentah dari `ChatLogResource`.
+
+![Respon JSON dari API Resource](docs/screenshots/04-json-response.png)
+
+<details>
+<summary>Tampilan mobile</summary>
+
+<img src="docs/screenshots/05-mobile.png" alt="Konsol di layar ponsel" width="320">
+
+</details>
+
+---
+
 ## Pemetaan ke spesifikasi tugas
 
 | Spesifikasi | Implementasi |
