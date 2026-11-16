@@ -265,10 +265,3 @@ routes/api.php             rute API
 resources/views/           konsol chat (Blade + public/js/console.js)
 tests/Feature, tests/Unit
 ```
-
-## Daftar periksa sebelum kumpul
-
-- [x] `.env` dan `vendor/` tidak ikut ter-commit (`.gitignore` bawaan Laravel)
-- [x] API mengembalikan `401` jika dipanggil tanpa token
-- [x] Sanctum (`composer.json`) dan semua migration (termasuk `personal_access_tokens`) disertakan
-- [x] README berisi API contract
